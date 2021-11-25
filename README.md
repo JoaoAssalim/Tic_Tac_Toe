@@ -5,7 +5,7 @@
 
 ## Development setup
 
-Para rodar o programa, basta instalar pythoN em sua maquina e clonar o repositorio em seu computador.
+Para rodar o programa, basta instalar python em sua maquina e clonar o repositorio em seu computador.
 ```sh
 cd "diretorio de sua preferencia"
 git clone https://github.com/JoaoAssalim/Tic_Tac_Toe.git
