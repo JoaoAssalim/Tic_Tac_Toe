@@ -3,9 +3,6 @@
 
 [![Build Status][travis-image]][travis-url]
 
-Este codigo é um jogo da velha no prompt de comando de seu computador, você escolhe a opção de marcação (X ou O) e começa jogando.
-
-
 ## Development setup
 
 Para rodar o programa, basta instalar pythoN em sua maquina e clonar o repositorio em seu computador.
