@@ -20,7 +20,7 @@ python Tic_Tac_Toe.py
 
 ## Meta
 
-Joao Assalim – [@Assalim18869971](https://twitter.com/@Assalim18869971) – assalim.py@gmail.com
+Joao Assalim – assalim.py@gmail.com
 
 [https://github.com/JoaoAssalim](https://github.com/JoaoAssalim)
 
