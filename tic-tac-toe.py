@@ -68,45 +68,45 @@ class TicTacToe:
 
         while True:
 
-                player = input(f'Position to put "{self.player_option}": ').upper()
-                if player in possibilidades:
-                    possibilidades.remove(player)
-                    index = array_play.index(player)
-                    array_play.pop(index)
-                    player_time(self.player_option)
-                else:
-                    print('try again! The possibilitys are: ', possibilidades)
-                    player = input('Position to put "X": ').upper()
-                    if player not in possibilidades:
-                        print('You error 2 times! You lose!')
-                        break
-                    else:
-                        possibilidades.remove(player)
-                        player_time(self.player_option)
-
-                print_clear()
-
-                if len(possibilidades) == 0:
-                    break
-                
-                player = choice(array_play)
+            player = input(f'Position to put "{self.player_option}": ').upper()
+            if player in possibilidades:
+                possibilidades.remove(player)
                 index = array_play.index(player)
                 array_play.pop(index)
-                possibilidades.remove(player)
-                player_time(self.bot_play)
-
-                print_clear()
-
-                if self.matriz[0][0] == self.player_option and self.matriz[1][0] == self.player_option and self.matriz[2][0] == self.player_option or self.matriz[0][0] == self.player_option and self.matriz[0][1] == self.player_option and self.matriz[0][2] == self.player_option or self.matriz[1][0] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[1][2] == self.player_option or self.matriz[2][0] == self.player_option and self.matriz[2][1] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][1] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[2][1] == self.player_option or self.matriz[0][2] == self.player_option and self.matriz[1][2] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][0] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][2] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[2][0] == self.player_option:
-                    print('Player Wins')
-                    break
-                elif self.matriz[0][0] == self.bot_play and self.matriz[1][0] == self.bot_play and self.matriz[2][0] == self.bot_play or self.matriz[0][0] == self.bot_play and self.matriz[0][1] == self.bot_play and self.matriz[0][2] == self.bot_play or self.matriz[1][0] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[1][2] == self.bot_play or self.matriz[2][0] == self.bot_play and self.matriz[2][1] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][1] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[2][1] == self.bot_play or self.matriz[0][2] == self.bot_play and self.matriz[1][2] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][0] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][2] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[2][0] == self.bot_play:
-                    print('Bot Wins')
+                player_time(self.player_option)
+            else:
+                print('try again! The possibilitys are: ', possibilidades)
+                player = input('Position to put "X": ').upper()
+                if player not in possibilidades:
+                    print('You error 2 times! You lose!')
                     break
                 else:
-                    if len(possibilidades) == 0:
-                        print('Velha')
-                        break
+                    possibilidades.remove(player)
+                    player_time(self.player_option)
+
+            print_clear()
+
+            if len(possibilidades) == 0:
+                break
+            
+            player = choice(array_play)
+            index = array_play.index(player)
+            array_play.pop(index)
+            possibilidades.remove(player)
+            player_time(self.bot_play)
+
+            print_clear()
+
+            if self.matriz[0][0] == self.player_option and self.matriz[1][0] == self.player_option and self.matriz[2][0] == self.player_option or self.matriz[0][0] == self.player_option and self.matriz[0][1] == self.player_option and self.matriz[0][2] == self.player_option or self.matriz[1][0] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[1][2] == self.player_option or self.matriz[2][0] == self.player_option and self.matriz[2][1] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][1] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[2][1] == self.player_option or self.matriz[0][2] == self.player_option and self.matriz[1][2] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][0] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz [2][2] == self.player_option or self.matriz[0][2] == self.player_option and self.matriz[1][1] == self.player_option and self.matriz[2][0] == self.player_option:
+                print('Player Wins')
+                break
+            elif self.matriz[0][0] == self.bot_play and self.matriz[1][0] == self.bot_play and self.matriz[2][0] == self.bot_play or self.matriz[0][0] == self.bot_play and self.matriz[0][1] == self.bot_play and self.matriz[0][2] == self.bot_play or self.matriz[1][0] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[1][2] == self.bot_play or self.matriz[2][0] == self.bot_play and self.matriz[2][1] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][1] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[2][1] == self.bot_play or self.matriz[0][2] == self.bot_play and self.matriz[1][2] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][0] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz [2][2] == self.bot_play or self.matriz[0][2] == self.bot_play and self.matriz[1][1] == self.bot_play and self.matriz[2][0] == self.bot_play:
+                print('Bot Wins')
+                break
+            else:
+                if len(possibilidades) == 0:
+                    print('Velha')
+                    break
 
 
 player_option = input('Do You want "O" or "X": ').upper()
